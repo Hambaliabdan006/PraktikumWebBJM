@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BarangKeluarController;
 use App\Http\Controllers\BarangMasukController;
@@ -42,3 +43,21 @@ Route::post('/admin/barang-keluar/simpan', [BarangKeluarController::class, 'simp
 Route::get('/admin/laporan', [LaporanController::class, 'index']);
 Route::get('/admin/laporan/barang', [LaporanController::class, 'cetak_barang']);
 
+=======
+use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
+|
+*/
+
+Route::get('/', function () {
+    return view('welcome');
+});
+>>>>>>> 9ebcf00a9f498f65c9ba5c8fe41e83f908c26205
